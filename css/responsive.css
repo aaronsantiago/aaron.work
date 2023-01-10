@@ -1,13 +1,13 @@
 
 #nametag {position: absolute;
   transform: rotate(-90deg);
-  bottom: -10vh;
-  left: 7.3vh;
+  bottom: -10.3vh;
+  left: 6.7vh;
   width: 100vh;
   transform-origin: top left 0;
   margin: 0;
   text-align: right;
-  font-size: 11.5vh;
+  font-size: 11vh;
 }
 
 a:hover {
