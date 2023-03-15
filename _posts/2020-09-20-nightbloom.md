@@ -7,6 +7,7 @@ categories:
 permalink: nightbloom
 cardImage: albums/nightbloom/4.png
 folder: /albums/nightbloom
+size: small
 ---
 
 An audio-reactive monitor sculpture made as part of floorkids.studio

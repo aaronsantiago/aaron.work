@@ -2,17 +2,10 @@
 layout: index
 date:   2013-12-09 12:00:00
 ---
-
-<div>
+<div class="project-list">
 {% for post in site.posts %}
 {% if post.hidden != true %}
-  {% if post.size == "big" %}
-  <div class="{{ post.gridclass }}">
-  {% elsif post.size == "medium" %}
-  <div class="{{ post.gridclass }}">
-  {% else %}
-  <div class="{{ post.gridclass }}">
-  {% endif %}
+  <div class="project-list__project project-list__project_{{ post.size }}">
       <a href="{{ post.url }}">
           <div>
             {% if post.cardImage %}
@@ -27,6 +20,6 @@ date:   2013-12-09 12:00:00
           </div>
       </a>
   </div>
-  {% endif %}
+{% endif %}
 {% endfor %}
 </div>

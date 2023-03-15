@@ -7,6 +7,7 @@ categories:
 permalink: severe_clear
 cardImage: albums/severe-clear/1.png
 folder: /albums/severe-clear
+size: medium
 ---
 
 An immersive experience held over Zoom written by James Scruggs and directed by Kristin Marting.

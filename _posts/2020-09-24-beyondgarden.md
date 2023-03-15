@@ -7,6 +7,7 @@ categories:
 permalink: beyondgarden
 cardImage: albums/beyondgarden/1.png
 folder: /albums/beyondgarden
+size: small
 ---
 
 An immersive light, poetry, and music experience made in collaboration with Studio Dyan Jong and Nick Gregg as floorkids.studio.

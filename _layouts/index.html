@@ -17,9 +17,17 @@
 </head>
 
 <body>
-  <div>
-    {{ content }}
-  </div>
+  {{ content }}
 </body>
+<script>
+  let element = document.getElementsByTagName('body')[0];
+  element.addEventListener('wheel', (event) => {
+    event.preventDefault();
+
+    element.scrollBy({
+      left: event.deltaY < 0 ? -50 : 50,
+    });
+  });
+</script>
 
 </html>
