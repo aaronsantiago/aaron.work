@@ -1,31 +1,27 @@
 ---
-layout: frontpage
-cover: cover.gif
-title: aaron.work
+layout: index
 date:   2013-12-09 12:00:00
 ---
 
-<div id="masonrygrid" class="grid">
+<div>
 {% for post in site.posts %}
 {% if post.hidden != true %}
   {% if post.size == "big" %}
-  <div class="{{ post.gridclass }} grid-item big-grid-item">
+  <div class="{{ post.gridclass }}">
   {% elsif post.size == "medium" %}
-  <div class="{{ post.gridclass }} grid-item med-grid-item">
+  <div class="{{ post.gridclass }}">
   {% else %}
-  <div class="{{ post.gridclass }} grid-item">
+  <div class="{{ post.gridclass }}">
   {% endif %}
       <a href="{{ post.url }}">
-          <div class="card">
+          <div>
             {% if post.cardImage %}
-              <div class="card-image">
-                  <figure class="image is-16by9">
-                    <img class="cover-image" src="{{post.cardImage}}" alt="image loading...">
-                  </figure>
+              <div>
+                    <!-- <img class="cover-image" src="{{post.cardImage}}" alt="image loading..."> -->
               </div>
             {% endif %}
-            <div class="card-content">
-              <p class="title is-4"> {{post.title}} </p>
+            <div>
+              <p> {{post.title}} </p>
               {{post.excerpt}}
             </div>
           </div>
@@ -33,5 +29,4 @@ date:   2013-12-09 12:00:00
   </div>
   {% endif %}
 {% endfor %}
-<div class="grid-sizer"></div>
 </div>

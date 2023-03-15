@@ -1,0 +1,34 @@
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: #4a4a4a;
+
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  font-size: 0.85em;
+
+
+  background: linear-gradient(70deg, rgba(240,221,123,1) 0%, rgba(218,188,181,1) 18%, rgba(154,222,222,1) 37%, rgba(176,170,219,1) 62%, rgba(213,159,159,1) 84%, rgba(148,233,207,1) 100%);
+  background-size: 1000% 1000%;
+  -webkit-animation: BackgroundMovement 16s ease infinite;
+  -moz-animation: BackgroundMovement 16s ease infinite;
+  animation: BackgroundMovement 16s ease infinite;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@-webkit-keyframes BackgroundMovement {
+    0%{background-position:0% 58%}
+    50%{background-position:100% 43%}
+    100%{background-position:0% 58%}
+}
+@-moz-keyframes BackgroundMovement {
+    0%{background-position:0% 58%}
+    50%{background-position:100% 43%}
+    100%{background-position:0% 58%}
+}
+@keyframes BackgroundMovement {
+    0%{background-position:0% 58%}
+    50%{background-position:100% 43%}
+    100%{background-position:0% 58%}
+}

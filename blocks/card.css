@@ -1,0 +1,16 @@
+
+.card-content .title {
+  margin-bottom: .3em !important;
+}
+
+.card {
+  background: #FFFFFF45;
+  border-radius: .3em;
+}
+.cover-image {
+  object-fit: cover;
+  height: 100%;
+  width: unset;
+  border-radius: .3em .3em 0 0;
+  opacity: 85%;
+}
