@@ -8,16 +8,21 @@ date:   2013-12-09 12:00:00
 
   <div class="project-list__project project-list__project_{{ post.size }}">
       <a href="{{ post.url }}">
-          <div>
+          <div class="card">
             {% if post.cardImage %}
-              <div>
-                    <!-- <img class="cover-image" src="{{post.cardImage}}" alt="image loading..."> -->
+            <div class="card__image_container" style="background-image: url({{post.cardImage}}); background-position: center; background-size:cover;">
+              <!-- <img class="card__image" src="{{post.cardImage}}" alt="image loading..."> -->
+              <div class="card__caption_container">
+                <div class="card__caption card__caption_{{ post.size }}">
+                  <div class="card__caption_excerpt">{{post.title}} </div>
+                  <div class="card__caption_excerpt card__caption_excerpt2">{{post.title}} </div>
+                  <div class="card__caption_excerpt card__caption_excerpt3">{{post.title}} </div>
+                  <div class="card__caption_excerpt card__caption_excerpt4">{{post.title}} </div>
+                  <!-- <div class="card__caption_excerpt">{{post.excerpt}}</div> -->
+                </div>
               </div>
-            {% endif %}
-            <div>
-              <p> {{post.title}} </p>
-              {{post.excerpt}}
             </div>
+            {% endif %}
           </div>
       </a>
   </div>
