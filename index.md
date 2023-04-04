@@ -14,11 +14,11 @@ date:   2013-12-09 12:00:00
               <!-- <img class="card__image" src="{{post.cardImage}}" alt="image loading..."> -->
               <div class="card__caption_container">
                 <div class="card__caption card__caption_{{ post.size }}">
-                  <div class="card__caption_excerpt">{{post.title}} </div>
-                  <div class="card__caption_excerpt card__caption_excerpt2">{{post.title}} </div>
-                  <div class="card__caption_excerpt card__caption_excerpt3">{{post.title}} </div>
-                  <div class="card__caption_excerpt card__caption_excerpt4">{{post.title}} </div>
-                  <!-- <div class="card__caption_excerpt">{{post.excerpt}}</div> -->
+                  <div class="card__caption_excerpt">{{post.title}}</div>
+                  <div class="card__caption_excerpt">{{post.title}}</div>
+                  <div class="card__caption_excerpt">{{post.title}}</div>
+                  <div class="card__caption_excerpt">{{post.title}}</div>
+                  <div class="card__caption_excerpt">{{post.title}}</div>
                 </div>
               </div>
             </div>

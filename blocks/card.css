@@ -37,11 +37,10 @@
 .card__caption {
   font-family: 'Rubik Mono One', sans-serif;
   color: #000;
-  padding: 20px;
   text-align: center;
   background-color: #FFFB;
-  width: 100%;
   display: flex;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
@@ -65,15 +64,18 @@
   white-space: nowrap;
   
   display: inline-block;
-  animation: scroll 10s linear infinite;
+  animation: scroll 5s cubic-bezier(.45,.05,.55,.95) infinite;
+  backface-visibility: hidden;
+  will-change: transform;
+  perspective: 1000px;
 }
 
 
 @keyframes scroll {
   from {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translateX(calc(-100% - var(--gap)));
+    transform: translate3d(calc(-100% - var(--gap)),0,0);
   }
 }
