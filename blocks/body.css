@@ -26,6 +26,12 @@ body {
   overflow-x: auto;
 }
 
+#fluid-wrapper {
+  position: fixed;
+  top: -5vh;
+  left: -5vw;
+}
+
 @-webkit-keyframes BackgroundMovement {
     0%{background-position:0% 58%}
     50%{background-position:100% 43%}
