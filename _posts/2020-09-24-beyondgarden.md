@@ -1,6 +1,6 @@
 ---
 layout: lightboxPost
-title: beyond.garden
+title: beyond garden
 cover: cover.jpg
 date:   2020-09-24 12:00:00
 categories: 

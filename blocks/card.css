@@ -61,19 +61,34 @@
 
 
 .card__caption_excerpt {
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  width: 100%;
   
   display: inline-block;
-  animation: scroll 5s cubic-bezier(.45,.05,.55,.95) infinite;
+  /* font-size: calc((100% - 4.5rem)); */
+  /* animation: scroll 5s linear infinite; */
+  letter-spacing: -.06em;
+  line-height: .8em;
+  margin-top:.1em;
   backface-visibility: hidden;
   will-change: transform;
   perspective: 1000px;
 }
-
+.card__caption_excerpt_2 {
+  white-space: nowrap;
+  width: 100%;
+  transform: translate3d(calc(100% + var(--gap)), 0, 0);
+  display: inline-block;
+  animation: scroll 5s linear infinite;
+  backface-visibility: hidden;
+  will-change: transform;
+  perspective: 1000px;
+  animation-delay: 2.5s;
+}
 
 @keyframes scroll {
   from {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(calc(100% + var(--gap)), 0, 0);
   }
   to {
     transform: translate3d(calc(-100% - var(--gap)),0,0);

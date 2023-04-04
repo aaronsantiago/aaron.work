@@ -1,6 +1,6 @@
 ---
 layout: lightboxPost
-title: in the future everything will be perfect
+title: in the future
 cover: cover.jpg
 date:   2021-01-31 12:00:00
 categories: 
