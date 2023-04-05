@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<style>
+  #imgGallery {
+    width: 45vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow-y: auto;    
+    overscroll-behavior: none;
+  }
+
+  #postContainer {
+    width: 35vw;
+    margin-right: 1em;
+    background-color: #FFFA;
+    border-radius: 30px;
+    margin-top: 10vh;
+    margin-left: 3vw;
+    padding: 3vw;
+    height: 50vh;
+  }
+
+  @media (max-width:640px) {
+    #postContainer {
+      width: unset;
+      /* margin-right: unset; */
+    }
+    #imgGallery {
+      width: 100%;
+      height: unset;
+      top: unset;
+      position: unset;
+      bottom: 0;
+    }
+  }
+</style>
+<div class="content" id="home">
+  <div>
+    <div id="postContainer" class="post">
+      <div id="post-info">
+        <div id="info-container">
+          <h1 id="title">{{ page.title }}</h1>
+          <!--<span id="date">{{ page.date | date_to_string }}</span>-->
+        </div>
+      </div>
+      {{ content }}
+    </div>
+  </div>
+</div>

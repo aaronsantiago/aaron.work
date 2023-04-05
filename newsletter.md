@@ -21,7 +21,7 @@ button, input, select, textarea {
 }
 
 #signup-card {
-  max-width: 40vmax;
+  max-width: 30vmax;
 }
 
 #confirm-button {
@@ -36,8 +36,8 @@ button, input, select, textarea {
 Every month, I send out a newsletter with some of the projects I've been working on and any availability I have to work on new projects. I'll never spam you and you can always let me know and I can take you off of the list! Just add your name and email below to sign up.
 
 
-<div class="card" id="signup-card">
-  <div class="card-content" id="signup-content">
+<div id="signup-card">
+  <div id="signup-content">
     <form action="#" onsubmit="submitEmail();return false">
       <div class="input-header">email</div>
       <div><input class="email-input" id="email"></div>
