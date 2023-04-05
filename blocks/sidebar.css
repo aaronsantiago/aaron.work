@@ -4,7 +4,7 @@
   left: -100vh;
   transform: rotateZ(-90deg);
   transform-origin: top right;
-  height: 5vh;
+  height: 12vh;
   width: 100vh;
   display: flex;
   justify-content: center;
@@ -19,24 +19,31 @@
   color: #FFFA;
   width: 100%;
   text-align: center;
-  line-height: 10vh;
+  line-height: 13vh;
 }
 
 .sidebar_maincontent {
-  padding-left: 5vh;
-  width: calc(100% - 5vh);
+  padding-left: 12vh;
+  width: calc(100% - 12vh);
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
   position: absolute;
   top: 0;
   left: 0;
 
   
   --mask: linear-gradient(to left, 
-      rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) calc(100% - 8vh), 
+      rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) calc(100% - 12vh - 50px), 
       rgba(0,0,0, 0) calc(100% - 4vh), rgba(0,0,0, 0) 0
   ) 100% 50% / 100% 100% repeat-x;
 
   -webkit-mask: var(--mask); 
   mask: var(--mask);
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.sidebar_maincontent::-webkit-scrollbar {
+  display: none;
 }

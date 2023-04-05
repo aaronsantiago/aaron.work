@@ -49,15 +49,15 @@
 }
 
 .card__caption_big {
-  font-size: 10em;
+  font-size: 8vh;
 }
 
 .card__caption_medium {
-  font-size: 5em;
+  font-size: 4vh;
 }
 
 .card__caption_small {
-  font-size: 2em;
+  font-size: 2vh;
 }
 
 

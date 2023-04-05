@@ -2,7 +2,7 @@
 
 
 .project-list {
-  --gapsize: 50px;
+  --gapsize: 4vh;
   padding: var(--gapsize);
   width: fit-content;
   height: calc(100% - var(--gapsize) - var(--gapsize));
