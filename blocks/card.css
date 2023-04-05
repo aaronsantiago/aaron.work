@@ -15,6 +15,7 @@
   height: 100%;
   overflow: hidden;
   position: relative;
+  opacity: .75;
 }
 
 .card__image {
@@ -38,7 +39,7 @@
   font-family: 'Rubik Mono One', sans-serif;
   color: #000;
   text-align: center;
-  background-color: #FFFB;
+  background-color: #FFF;
   display: flex;
   width: 100%;
   justify-content: space-around;

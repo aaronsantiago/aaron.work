@@ -2,7 +2,7 @@
 
 
 .project-list {
-  --gapsize: 90px;
+  --gapsize: 50px;
   padding: var(--gapsize);
   width: fit-content;
   height: calc(100% - var(--gapsize) - var(--gapsize));
@@ -10,7 +10,7 @@
   grid-template-rows: repeat(6, 1fr);
   grid-gap: var(--gapsize);
   grid-auto-flow: column dense;
-  grid-auto-columns: 6em;
+  grid-auto-columns: 8em;
 }
 
 .project-list__project {

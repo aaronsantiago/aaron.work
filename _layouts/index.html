@@ -19,13 +19,17 @@
 <body>
   <div id="fluid-wrapper"></div>
   <script src="./js/fluid.js"></script>
-  {{ content }}
+  <div class="sidebar">
+    <div class="sidebar_container">aaron santiago</div>
+  </div>
+  <div class="sidebar_maincontent">
+    {{ content }}
+  </div>
 </body>
 <script>
-  let element = document.getElementsByTagName('body')[0];
+  let element = document.getElementsByClassName('sidebar_maincontent')[0];
   element.addEventListener('wheel', (event) => {
     event.preventDefault();
-
     element.scrollBy({
       left: event.deltaY < 0 ? -50 : 50,
     });

@@ -1,0 +1,42 @@
+.sidebar {
+  position:fixed;
+  top: 0;
+  left: -100vh;
+  transform: rotateZ(-90deg);
+  transform-origin: top right;
+  height: 5vh;
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.sidebar_container {
+  position: absolute;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 8vh;
+  letter-spacing: -.06em;
+  color: #FFFA;
+  width: 100%;
+  text-align: center;
+  line-height: 10vh;
+}
+
+.sidebar_maincontent {
+  padding-left: 5vh;
+  width: calc(100% - 5vh);
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  
+  --mask: linear-gradient(to left, 
+      rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) calc(100% - 8vh), 
+      rgba(0,0,0, 0) calc(100% - 4vh), rgba(0,0,0, 0) 0
+  ) 100% 50% / 100% 100% repeat-x;
+
+  -webkit-mask: var(--mask); 
+  mask: var(--mask);
+}
