@@ -1,31 +1,8 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>aaron.work</title>
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="/pages/index.css">
-
-
-  <!-- Google Fonts -->
-  <script src="http://127.0.0.1:35729/livereload.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@500;600;800&family=Archivo+Black&family=Ramabhadra&family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
-</head>
-
-<body>
-  <div id="fluid-wrapper"></div>
-  <script src="./js/fluid.js"></script>
-  <div class="sidebar">
-    <div class="sidebar_container">aaron santiago</div>
-  </div>
-  <div class="sidebar_maincontent">
-    {{ content }}
-  </div>
-</body>
+{{content}}
 <script>
   let element = document.getElementsByClassName('sidebar_maincontent')[0];
   element.addEventListener('wheel', (event) => {
@@ -35,17 +12,3 @@
     });
   });
 </script>
-
-<script>
-  // get query string
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  if (urlParams.has('ref') && urlParams.get('ref').includes('kevbadge')) {
-    const badge = document.createElement('script');
-    badge.src = 'https://unpkg.com/kevbadge/kevbadge.js';
-    badge.async = true;
-    document.body.appendChild(badge);
-  }
-</script>
-
-</html>

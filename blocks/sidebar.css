@@ -8,18 +8,19 @@
   width: 100vh;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  z-index: 100;
 }
 
 .sidebar_container {
   position: absolute;
+  text-decoration: none;
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 8vh;
   letter-spacing: -.06em;
   color: #FFFA;
   width: 100%;
   text-align: center;
-  line-height: 13vh;
 }
 
 .sidebar_maincontent {

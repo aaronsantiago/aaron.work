@@ -3,7 +3,7 @@ layout: default
 ---
 <style>
   #imgGallery {
-    width: 45%;
+    width: 45vw;
     height: 100vh;
     position: absolute;
     right: 0;
@@ -13,14 +13,20 @@ layout: default
   }
 
   #postContainer {
-    width: 45%;
+    width: 35vw;
     margin-right: 1em;
+    background-color: #FFFA;
+    border-radius: 30px;
+    margin-top: 10vh;
+    margin-left: 3vw;
+    padding: 3vw;
+    height: 50vh;
   }
 
   @media (max-width:640px) {
     #postContainer {
       width: unset;
-      margin-right: unset;
+      /* margin-right: unset; */
     }
     #imgGallery {
       width: 100%;
