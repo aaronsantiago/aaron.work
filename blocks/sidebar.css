@@ -61,9 +61,9 @@
   letter-spacing: -.05em;
   color: #FFFA;
   width: 100%;
-  text-align: center;
   transform: rotateZ(90deg);
   line-height: 1.5em;
+  padding-left: 1em;
 }
 
 .sidebar_about > a {
