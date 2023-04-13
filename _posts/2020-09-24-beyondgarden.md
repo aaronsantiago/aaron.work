@@ -5,7 +5,7 @@ cover: cover.jpg
 date:   2020-09-24 12:00:00
 categories: 
 permalink: beyondgarden
-cardImage: albums/beyondgarden/1.png
+cardImage: albums/beyondgarden/beyondgarden3.webp
 folder: /albums/beyondgarden
 size: small
 ---
