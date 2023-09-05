@@ -8,6 +8,7 @@ permalink: robotic-love
 cardImage: albums/robotic-love/0.png
 folder: robotic-love
 size: small
+hidden: true
 ---
 
 Made in collaboration with Gary P., Philip Cadoux, and Sid Chou at ITP Camp 2020.

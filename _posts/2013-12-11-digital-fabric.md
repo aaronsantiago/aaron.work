@@ -8,6 +8,7 @@ permalink: digital-fabric
 cardImage: albums/cdf/cdf1.png
 folder: /albums/cdf
 size: small
+hidden: true
 ---
 
 Digital fabric is a collection of images and video generated using video feedback.
