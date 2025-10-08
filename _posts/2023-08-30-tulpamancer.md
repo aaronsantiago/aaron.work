@@ -1,13 +1,13 @@
 ---
 layout: lightboxPost
 title: tulpamancer
-cover: 
+cover:
 date:   2022-01-21 12:00:00
-categories: 
+categories:
 permalink: tulpamancer
 cardImage: albums/tulpamancer/tulpamancer1.webp
 folder: /albums/tulpamancer
-size: big
+size: medium
 ---
 
 Tulpamancer is an immersive experience that lets users explore their dreams and memories through AI. Made in collaboration with Matthew Niederhauser and Marc Da Costa.
